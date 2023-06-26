@@ -69,9 +69,25 @@ const icons = {
 
 const Image = (props) => {
     const {name, classes, type} = props;
-  return (
-    <img src={type === 'mobile'? mobImages[name] : type === 'icon' ? icons[name] : deskImages[name]} className={classes} alt="selected img" />
-  )
+
+    if (type === 'icon' ){
+      return (
+        <img src={icons[name]} className={classes} alt="selected img"  />
+      )
+    }else if (type === 'mobile' ){
+      return (
+        <img src={mobImages[name]} className={`${classes} md:hidden w-full`} alt="selected img"  />
+      )
+    }else if (type === 'desktop' ){
+      return (
+        <img src={deskImages[name]} className={`${classes} hidden md:block group-hover:scale-110 duration-200 w-full`} alt="selected img"  />
+      )
+    }else{
+      return (
+        <img src={deskImages[name]} className={classes} alt="selected img" />
+      )
+    }
+
 }
 
 export default Image;
