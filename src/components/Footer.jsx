@@ -6,7 +6,7 @@ const d = new Date();
 const Footer = () => {
   return (
     <footer id="footer w-full">
-      <div className="container max-w-6xl py-10 mx-auto bg-black">
+      <div className="py-10 mx-auto bg-black w-full">
         <div className="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start">
           <div className="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
             <div className="logo h-8">
