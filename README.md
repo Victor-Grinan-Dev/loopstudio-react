@@ -1,5 +1,6 @@
 # Landing-page 
 - this is a mini project to learn tailwind css.
+- online: https://loopstodios-react.vercel.app/
 
 ## steps I followed to start this project:
 https://tailwindcss.com/docs/guides/create-react-app
